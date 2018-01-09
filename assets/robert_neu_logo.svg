@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-887 435 32 32" enable-background="new -887 435 32 32" xml:space="preserve">
+<title>robert_neu_logo</title>
+<desc>Created with Sketch.</desc>
+<style>
+	.line:hover{
+		fill:#353535;
+		-webkit-transition: all 0.2s ease-in-out;
+   		-moz-transition: all 0.2s ease-in-out;
+   		transition: all 0.2s ease-in-out;
+	}
+</style>
+<g id="Page-1">
+	<g id="robert_neu_logo">
+		<g id="logo">
+			<path fill="#979797" class="line" d="M-878,464.3c-0.7,0-1.2-0.5-1.2-1.2v-12.9c0-0.7,0.5-1.2,1.2-1.2h4.1l-5.3-9.4c-0.2-0.4-0.2-0.8,0-1.2
+				c0.2-0.4,0.6-0.6,1-0.6h10.1c0.5,0,2.1-0.1,3.5,1.1c1.3,1.1,2,3,2,5.5c0,2.4-0.7,4.2-2,5.5c-1.7,1.6-3.9,1.6-4,1.5h-1.3l4,6.9
+				v-1.9c0-0.7,0.5-1.2,1.2-1.2c0.7,0,1.2,0.5,1.2,1.2v6.5c0,0.5-0.4,1-0.9,1.2c-0.5,0.1-1.1-0.1-1.4-0.6l-6.9-12.1l-4.3,0V463
+				C-876.8,463.7-877.3,464.3-878,464.3z M-871.2,448.9h2.7c0.1,0,1.3,0,2.3-0.9c0.8-0.8,1.2-2,1.2-3.7c0-1.7-0.4-3-1.1-3.6
+				c-0.8-0.7-1.7-0.5-1.7-0.5c-0.1,0-0.1,0-0.2,0h-8.1L-871.2,448.9z"/>
+		</g>
+	</g>
+</g>
+</svg>

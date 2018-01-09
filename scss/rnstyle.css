@@ -1,0 +1,660 @@
+/*
+Website: robertneu.me 
+Programmer: Robert Neu
+*/
+/* variable */
+/* end of variables */
+/* begin mix ins*/
+/* begin mix ins*/
+/* imports */
+@import url(reset.css);
+/* end of imports */
+/* browser */
+body {
+  background-color: #fff;
+  width: 100%;
+  font: 100% "Palanquin", sans-serif;
+  margin: 0 auto; }
+
+h1 {
+  font: 100% "Palanquin", sans-serif;
+  font-size: 45px;
+  font-weight: 400; }
+
+h3 {
+  font: 100% "Palanquin", sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  text-align: center;
+  padding: 2em 0 1em 0; }
+
+h6 {
+  font: 100% "Palanquin", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  padding: 2em 0 1em 0; }
+
+p {
+  font: 100% "Palanquin", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px; }
+
+a {
+  text-decoration: none; }
+
+a li {
+  font: 100% "Palanquin", sans-serif;
+  font-weight: 300;
+  padding: 5px 0 5px 0;
+  text-decoration: none;
+  color: #353535;
+  position: relative; }
+
+a li:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-bottom: 2px solid #353535;
+  transition: 0.4s; }
+
+a li:hover:after {
+  width: 100%; }
+
+img {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-bottom: 20px; }
+
+a .bttn {
+  padding: 10px 20px;
+  border: 2px solid #f1f1f1;
+  color: #fff;
+  display: block;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  max-width: 120px;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 300; }
+
+a .bttn:hover {
+  background-color: #fff;
+  color: #353535;
+  curser: pointer; }
+
+.outline {
+  border: 2px solid #f1f1f1; }
+
+.bold {
+  font-weight: 400; }
+
+.details {
+  padding-top: 3em; }
+
+.details_bottom {
+  margin-bottom: 2em; }
+
+.space {
+  padding-bottom: 40px; }
+
+/* end of browser */
+/* top nav */
+.logoContainer {
+  float: left;
+  padding: 0 0 0 10%;
+  width: 45px; }
+
+.navContent {
+  float: right;
+  margin-right: 10%; }
+
+.mainNav {
+  width: 100%;
+  text-align: right;
+  padding: 1em 0 1em 0;
+  margin: 0 auto;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  background-color: rgba(255, 255, 255, 0.95); }
+  .mainNav a li {
+    font-size: 18px;
+    padding: 0 10px; }
+
+ul.mainUl {
+  margin: 3px auto;
+  line-height: 1.4;
+  padding-left: 0; }
+
+.mainUl li {
+  display: inline;
+  text-align: center;
+  padding: 1em 1em; }
+
+/* end of top nav */
+/* index */
+video {
+  position: relative;
+  z-index: -100;
+  margin-bottom: -10px; }
+
+#homeHeader {
+  position: absolute;
+  top: 10%;
+  text-align: left;
+  width: 100%;
+  z-index: 2;
+  margin-left: 10%; }
+  #homeHeader a .bttn {
+    padding: 10px 20px;
+    color: #353535;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 300;
+    border: none;
+    margin: 0;
+    padding: 0;
+    max-width: 50px; }
+
+.homeTitle {
+  font: 100% "Palanquin", sans-serif;
+  font-size: 7em;
+  font-weight: 500;
+  text-align: left; }
+
+.homesub {
+  font: 100% "Palanquin", sans-serif;
+  font-size: 2em;
+  letter-spacing: 3px;
+  color: #bbbbbb;
+  text-align: left; }
+
+.memo {
+  font: 100% "Palanquin", sans-serif;
+  font-size: 17px;
+  line-height: 25px;
+  max-width: 700px;
+  letter-spacing: 3px;
+  font-weight: 300;
+  text-align: left; }
+
+.link {
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 3px; }
+
+.linkHybrid {
+  font-size: 14px;
+  font-weight: 300;
+  padding: 5px 0 3px 0;
+  letter-spacing: 3px;
+  margin-bottom: 20%; }
+
+/* end of index */
+/* Article Pages */
+/* article nav */
+.articleNav {
+  width: 100%;
+  text-align: center;
+  margin-top: 1em;
+  font-size: 30px; }
+
+.articleUl a li {
+  font: 100% "Palanquin", sans-serif;
+  display: inline;
+  text-align: center;
+  padding: 15px;
+  font-size: 18px;
+  color: #fff;
+  position: relative;
+  text-decoration: none;
+  font-weight: 300; }
+
+.articleUl a li:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-bottom: 2px solid #ffffff;
+  transition: 0.4s; }
+
+.articleUl a li:hover:after {
+  width: 100%; }
+
+/* end of article nav */
+/* main article section */
+.hero {
+  text-align: center;
+  margin: 0; }
+
+.heroIntro {
+  padding: 3rem;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.articleIntro {
+  font: 100% "Palanquin", sans-serif;
+  font-size: 90px;
+  color: #fff;
+  font-weight: 300;
+  vertical-align: center; }
+
+.articleMemo {
+  font: 100% "Palanquin", sans-serif;
+  font-size: 20px;
+  max-width: 700px;
+  letter-spacing: 3px;
+  font-weight: 100;
+  color: #fff; }
+
+.article {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  -moz-animation: fadein 1s;
+  /* Firefox */
+  -webkit-animation: fadein 1s;
+  /* Safari and Chrome */
+  -o-animation: fadein 1s;
+  /* Opera */ }
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.workImages {
+  padding: 35px 0;
+  text-align: center; }
+
+.endChapter {
+  padding-bottom: 10%; }
+
+/* whats next section (next case study) */
+.whatNext {
+  height: 300px; }
+
+.skipZip {
+  width: 50%;
+  height: 300px;
+  float: right;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 15;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  curser: pointer;
+  background-color: #353535;
+  background-image: url("http://robertneu.me/assets/ziprecruiter.svg");
+  background-size: 30%; }
+
+.skipCause {
+  width: 50%;
+  height: 300px;
+  float: right;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 15;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  curser: pointer;
+  background-color: #4bbcc1;
+  background-image: url("http://robertneu.me/assets/causebox_logo.svg");
+  background-size: 30%; }
+
+#causeRight {
+  width: 50%;
+  height: 300px;
+  float: right;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 15;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  curser: pointer;
+  background-color: #4bbcc1;
+  background-image: url("http://robertneu.me/assets/causebox_logo.svg");
+  background-size: 30%; }
+
+.skipRose {
+  width: 50%;
+  height: 300px;
+  float: right;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 15;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  curser: pointer;
+  background-color: #f26d7e;
+  background-image: url("http://robertneu.me/assets/rosetree_logo.svg");
+  background-size: 30%; }
+
+/*  end of whats next section  */
+/* end of article pages */
+/* work page */
+#work {
+  -moz-animation: fadein 1s;
+  /* Firefox */
+  -webkit-animation: fadein 1s;
+  /* Safari and Chrome */
+  -o-animation: fadein 1s;
+  /* Opera */ }
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+#workHero {
+  position: relative;
+  height: 100%;
+  background-color: #f26d7e; }
+
+.workHeader {
+  text-align: center;
+  padding: 10% 10%; }
+
+.workTitle {
+  color: #fff;
+  padding-bottom: 30px;
+  max-width: 30%; }
+
+.workSub {
+  font: 100% "Palanquin", sans-serif;
+  font-size: 2em;
+  letter-spacing: 3px;
+  color: #fff;
+  margin-top: -1em; }
+
+.workMemo {
+  font: 100% "Palanquin", sans-serif;
+  color: #fff;
+  font-size: 17px;
+  line-height: 25px;
+  letter-spacing: 3px;
+  font-weight: 300;
+  padding-bottom: 2em; }
+
+#zipHero {
+  position: relative;
+  height: 100%;
+  background-color: #353535; }
+
+.researchChapter h3 {
+  padding-bottom: 0; }
+.researchChapter h6 {
+  padding-top: 0; }
+
+#research {
+  padding-bottom: 30px; }
+
+#causeHero {
+  position: relative;
+  height: 100%;
+  background-color: #4bbcc1; }
+
+/* end of work page */
+/* rosetree page */
+.rosetreeIntro {
+  width: 23%;
+  height: 130px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-image: url("http://robertneu.me/assets/rosetree_logo.svg");
+  width: 20%;
+  margin-bottom: .5em; }
+
+#rosetree {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("http://robertneu.me/assets/rosetree_hero.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 65vh;
+  background-color: #cccccc; }
+
+/* end of rosetree */
+/* zip */
+.zipIntro {
+  width: 23%;
+  height: 130px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  min-width: 300px;
+  background-image: url("http://robertneu.me/assets/ziprecruiter.svg"); }
+
+#zip {
+  background-image: url("http://robertneu.me/assets/zip-bg.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 65vh;
+  background-color: #cccccc; }
+
+/* end of zip */
+/*  causebox  */
+#causebox {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("http://robertneu.me/assets/causebox_heroi.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 65vh;
+  background-color: #cccccc; }
+
+#causePersona {
+  margin: 0 auto;
+  border: 2px solid #f1f1f1; }
+
+.causeIntro {
+  width: 23%;
+  height: 130px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-image: url("http://robertneu.me/assets/causebox_logo.svg"); }
+
+/*end of causebox */
+/* Footer */
+.footer {
+  clear: both;
+  width: 100%;
+  bottom: 0px; }
+  .footer .footerContent {
+    background-color: #f9f9f9;
+    width: 100%;
+    text-align: center; }
+
+/* footer nav */
+.footerNav {
+  width: 100%;
+  text-align: center;
+  font-size: 17px;
+  padding: 2em 0 2em 0;
+  background-color: #f1f1f1; }
+  .footerNav ul {
+    margin: 3px auto;
+    line-height: 1.4;
+    padding-left: 0; }
+  .footerNav li {
+    display: inline;
+    text-align: center;
+    padding: 10px 2em; }
+
+/* footer nav end */
+/* end of footer */
+/* responsive */
+@media all and (min-width: 781px) and (max-width: 1400px) {
+  #homeHeader {
+    position: relative;
+    margin-top: 90px; }
+
+  .footer {
+    position: relative; }
+
+  video {
+    display: none; }
+
+  .video {
+    background-image: url("http://robertneu.me/assets/causebox_heroi.jpg");
+    height: 100vh;
+    width: 100%; } }
+@media all and (max-width: 780px) {
+  p {
+    margin: 0 10%; }
+
+  img {
+    width: 90%;
+    margin-left: 5%; }
+
+  video {
+    display: none; }
+
+  #mobileImg {
+    margon: 0 10%; }
+
+  #homeHeader {
+    position: relative; }
+
+  .mainNav {
+    position: relative;
+    top: 0;
+    z-index: 1;
+    background-color: white; }
+
+  .mainNav a li {
+    padding: 10px 10px; }
+
+  .homesub {
+    padding: .75em 0 .4em 0; }
+
+  .workHeader {
+    padding: 7em 0; }
+
+  .homeTitle {
+    line-height: 1em;
+    font-size: 4em;
+    padding-bottom: 10px;
+    margin-top: .5em; }
+
+  .memo {
+    padding-left: 0;
+    margin-bottom: 4em; }
+
+  .homesub {
+    line-height: 1em;
+    padding-left: 0; }
+
+  .workTitle {
+    max-width: 70%; }
+
+  .article {
+    max-width: 100%; }
+
+  .zipIntro {
+    width: 50%;
+    margin: 1em auto;
+    min-width: 250px;
+    height: 50px; }
+
+  .causeIntro {
+    width: 50%;
+    margin: 0 auto;
+    min-width: 250px; }
+
+  .rosetreeIntro {
+    width: 50%;
+    margin: 0 auto;
+    min-width: 250px; }
+
+  #zip {
+    height: 400px; }
+
+  .articleUl a li {
+    display: block;
+    padding: .5em .75em; }
+
+  #whatNext {
+    width: 100%; }
+
+  .skipCause {
+    width: 100%;
+    background-size: 50%; }
+
+  #causeRight {
+    width: 100%;
+    background-size: 50%; }
+
+  .skipRose {
+    width: 100%;
+    background-size: 50%; }
+
+  .skipZip {
+    width: 100%;
+    background-size: 50%; }
+
+  .footerNav {
+    padding: 1em 0; }
+    .footerNav a li {
+      display: block;
+      padding: 20px 0;
+      font-size: 17px; } }
+@media all and (max-width: 450px) {
+  #homeHeader {
+    max-width: 250px;
+    margin-left: 12%; }
+
+  .footer {
+    position: relative;
+    margin-top: 4em; }
+
+  .logoContainer {
+    padding: 0, 0, 0, 5%; } }
+
+/*# sourceMappingURL=rnstyle.css.map */
